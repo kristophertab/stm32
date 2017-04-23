@@ -1,9 +1,9 @@
-###Wyświetlacz z Nokia 5110
+# Wyświetlacz z Nokia 5110
 Program wyświetla liczby doskonałe (takie których suma dzielników, bez niej, jest równa jej samej) na monhromatycznym ekranie o rodzielczości 48x84px, który komunikuje się z procesorem przy pomocy SPI
 
-#Zdjęcie
+## Zdjęcie
 ![Wyswietlacz.png](https://github.com/kristophertab/stm32/blob/master/NokiaDisplayLiczby/IMG_20170423_171541.jpg)
-#Kod programu
+## Kod programu
 ```C
 /**
   ******************************************************************************
