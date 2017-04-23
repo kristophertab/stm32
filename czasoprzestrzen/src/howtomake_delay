@@ -1,0 +1,42 @@
+Timer time-base configuration
+#define ANY_DELAY_RQUIRED       0x0FFF
+/* Hardware-precision delay loop implementation using TIM6 timer 
+peripheral. Any other STM32 timer can be used to fulfill this function, but 
+TIM6 timer was chosen as it has the less integration level. Other timer 
+peripherals may be reserved for more complicated tasks */
+/* Clear the update event flag */
+TIM6->SR = 0
+/* Set the required delay */
+/* The timer presclaer reset value is 0. If a longer delay is required the 
+presacler register may be configured to */
+/*TIM6->PSC = 0 */
+TIM6->ARR = ANY_DELAY_RQUIRED
+/* Start the timer counter */
+TIM6->CR1 |= TIM_CR1_CEN
+069
+8
+
+,&\
+,&\36
+75&
+7,\)3\
+7,\)3]
+7,0[B&+\
+&17FRXQWHU
+&DSWXUH&RPSDUH
+\
+5HJLVWHU
+3UHVFDOHU
+,QSXWILOWHU 
+HGJHGHWHFWRU
+&&\,
+)URPDGMDFHQWFKDQQHO=
+7RDGMDFHQWFKDQQHO=
+7,<
+Basic operating modes of STM32 general-purpose timers
+AN4776
+12/73
+DocID028459 Rev 1
+/* Loop until the update event flag is set */
+while (!(TIM6->SR & TIM_SR_UIF));
+/* The required time delay has been elapsed */
