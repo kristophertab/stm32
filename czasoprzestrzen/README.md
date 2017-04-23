@@ -1,7 +1,7 @@
 # Odległościomierz
 Edukacyjny projekt realizowany na płytce stm32f4-discovery. Czujnik ultradźwiękowy HC-SR04 przesyła pomiary do mikroprocesora, który następnie steruje wychyleniem serwa pokazującym jak daleko znajduje się wykrywany obiekt
 # Zdjęcie
-![odleglosciomierz.png](https://github.com/kristophertab/stm32/czasoprzestrzen/odleglosciomierz.png)
+![odleglosciomierz.png](https://github.com/kristophertab/stm32/blob/master/czasoprzestrzen/odleglosciomierz.png)
 
 Kod programu znajduje się w pliku /src/main.c
 
